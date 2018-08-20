@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
-                sh 'tree'
+                sh 'ls -ls'
             }
             post {
                 always {
